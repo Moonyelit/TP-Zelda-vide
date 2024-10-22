@@ -1,12 +1,11 @@
 
-
+/*Bootstrap*/
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Medula+One&display=swap');
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 
 
-/*
+/*STYLE GENERAL*/
 @font-face {
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
@@ -23,16 +22,24 @@
   font-weight: bold;
 }
 
-*/
+body p{
+  font-family: "Libre Baskerville", serif;
+}
 
+h1{
+  font-family: "Medula One", cursive;
+  font-size: 64px ;
+}
+
+h2{
+  font-family: "Medula One", cursive;
+  font-size: 48px ;
+}
 
 /*
 
 Polices : Medula One pour les titres et boutons, Libre Baskerville pour le reste
 
-h1 64px
-
-h2 48px
 
 h3 36px 
 
@@ -55,9 +62,8 @@ Jaune : #ffc107
 
 
 /* STYLES DES SECTIONS  */
-
 .dark {
-    /* Image de fond : zelda-bg_pattern_brown.png */
+    background-image: url(../img/"zelda-bg_pattern_brown.png");
 }
 
 .light {

@@ -5,31 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The legend of Zelda - Breath of the Wild </title>
+   
     <!-- Intégration Bootstrap -->
-     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+B">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    ">
+
+
      <!-- Votre CSS -->
-     
+     <link rel="stylesheet" href="css/style.css">
 		
 </head>
 <body>
     <!-- MENU / NAVBAR -->
-	<section id="navbar"> 
-		<a href="#carousel">Le jeu évènement</a>
-		<a href="#basic">	Entrer</a>
-		<a href="#botstrap"> Découvrir</a>
-		<a href="#carouselsmall"> Combattre</a>
-		<a href="#gridcss"> S'équiper</a>
-		<a href="#series"> Plus</a>
+	<section id="NAVBAR">
+
+        <div class="logo">
+            <img src="img/logo-xs-svg.png" alt="Logo">
+        </div>
+
+        <div class="section-NAVBAR">
+            <a href="#carousel">Le jeu évènement</a>
+            <a href="#basic">	Entrer</a>
+            <a href="#botstrap"> Découvrir</a>
+            <a href="#carouselsmall"> Combattre</a>
+            <a href="#gridcss"> S'équiper</a>
+            <a href="#series"> Plus</a>
+        </div> 
 	</section>
 
 
     <!-- CAROUSEL -->
-	<section id="carousel" class="section-carousel">
+	<section id="CAROUSEL" class="section-carousel">
       <div class="carousel-images">
-        <img src="img/zelda-header-main.jpg">
-		<img src="img/zelda-header-d.jpg">
-        <img src="img/zelda-header-f.jpg">
-        <img src="img/zelda-header-g.jpg">
+            <img src="img/zelda-header-main.jpg" alt="zelda header/wallpaper  main">
+            
+            <!-- <img src="img/zelda-header-d.jpg" alt="zelda header/wallpaper d"> -->
+            <!-- <img src="img/zelda-header-f.jpg" alt="zelda header/wallpaper  f"> -->
+            <!-- <img src="img/zelda-header-g.jpg" alt="zelda header/wallpaper  g"> -->
 		</div>
 		
     </section>
@@ -38,55 +51,139 @@
     
 
       <!-- SECTION #1 - BASIC -->
-		<section id="basic">
+		<section id="BASIC" class="section-basic">
+
+            <div class="dark">
 			<h1> Entrez dans un monde d'aventure</h1>
+            <div class="hl-arrow"></div>
 				<p>Oubliez tout ce que vous savez sur les jeux The Legend of Zelda. Plongez dans un monde de découverte, d'exploration et d'aventure dans <div class="hl-arrow"> The Legend of Zelda: Breath of the Wild :</div>, un nouveau jeu qui vient bouleverser la série à succès.</p>
 	
 			<h1>Ouvre les yeux</h1>
-	
+            <div class="hl-arrow"></div>
+
+            <div class="basic-cheval">
+                <p> Après un sommeil de d'un siècle, Link se réveille seul dans un monde qu'il ne reconnaît pas. Le héros légendaire va désormais devoir explorer un territoire vaste et dangereux et retrouver la mémoire avant qu'Hyrule ne soit perdu à jamais. Link entreprend un périple pour trouver des réponses où il devra se servir de tout ce qui se trouve sur sa route pour survivre. </p>
+                <img src="img/zelda-link-cheval.png" alt="link cheval">
+		    </div>
 		
-				
       <!-- Utiliser les bonnes classes pour les background des sections -->
       <!-- Utiliser les class de spacing pour aérer votre page : https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
-     
-		</section>
+    </div>
+    </section>
 
       <!-- SECTION #2 - BOTSTRAP COL -->
-	<section id="basic" class="section-basic">
-      <!-- N'oubliez pas l'affichage responsive, chaque colonne doit être en full width sur smartphone -->
-    <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
-     
-	</section>
+        <section id="BOTSTRAP" class="section-botstrap">
+
+                <div class="light">
+
+            <h1> Découvrez le vaste monde qui vous entoure</h1>
+            <div class="hl-arrow"></div>
+                <p>Explorez les paysages d'Hyrule de la manière qui vous convient. Escaladez des tours et montagnes à la recherche de nouvelles destinations et utilisez une mystérieuse tablette appelée "tablette sheikah" pour voir une carte d'Hyrule qui permet de repérer des points d'intérêt.</p>
+                <img  class="section-botstrap-wallpaper"  src="img/zelda-header-c.jpg" alt="link fond plaine">
+                <p>Link peut couvrir rapidement un large territoire en montant à cheval, naviguer à travers les eaux d'Hyrule sur un radeau ou dévaler les pentes en surfant sur son bouclier. Link a également la possibilité de fendre le ciel grâce son paravoile.</p>
+                
+                <div class="section-botstrap-images">
+                <img src="img/zelda-png-b.png" alt="link avec un arc">
+                <img src="img/zelda-png-a.png" alt="princesse zelda">
+                <img src="img/zelda-png-c.png" alt="link cheval">
+                </div>
+                
+                <!-- N'oubliez pas l'affichage responsive, chaque colonne doit être en full width sur smartphone -->
+    </div>    
+   </section>
 
     <!-- SECTION #3 - CAROUSEL -->
-    <!-- Simple carousel sans navigation - 3 slides 
+        <section id="CAROUSELSMALL" class="section-carouselsmall">
+            
+            <div class="dark">
 
-        - zelda-gardian.jpg
-        - zelda-hinox.jpg
-        - zelda-run.jpg
+            <h1> Combattez pour votre royaume </h1>
+                <div class="hl-arrow"></div>
 
-    -->
-    
-    
+                <p>Grâce aux capacités d'adaptation de Link, celui-ci est capable d'acquérir différentes armes pour combattre. Néanmoins, ces armes s'usent avec le temps et il devra sans cesse en chercher de nouvelles.</p>
+                <div class="section-carouselsmall-images">
+                    <!-- <img src="img/zelda-hinox.jpg" alt="Zelda présenation hinox"> -->
+                    <!-- <img src="img/zelda-gardian.jpg" alt="princesse zelda"> -->
+                    <img src="img/zelda-run.jpg" alt="link qui court TOTK">
+                    </div>
+                <p>Mais pour combattre, il n'y a pas que les armes. Link devra également apprendre à maîtriser toutes sortes d'attaques, comme le tir de flèches à longue portée ou la manipulation d'explosifs afin de ressortir vainqueur des affrontements qui l'attendent.</p>
+            
+            </div>
+            </section>
 
     <!-- SECTION #4 - GRID CSS -->
-    <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
+        <section id="GRID" class="section-grid">
+            <div class="light">
+            <h1> Préparez-vous et équipez-vous en conséquence </h1>
+            <div class="hl-arrow"></div>
+                <p><Il vous faudra donc chasser les créatures sauvages, récolter des fruits et des légumes, ou piller des campements ennemis pour y trouver de la nourriture. Vous pourrez même apprendre des recettes pour pimenter le tout ! De nouvelles recettes ne modifient pas uniquement le goût des aliments, elle permettent de soigner Link et de lui conférer un boost de compétence./p>
+                    <div class="section-grid-images">
+                        <img src="img/zelda-grid-a.jpg" alt="link arc background">
+                        <img src="img/zelda-grid-b.jpg" alt="link zelda pleurent">
+                        <img src="img/zelda-grid-c.jpg" alt="link zelda rencontrent">
+                        <img src="img/zelda-grid-d.jpg" alt="zelda portrait">
+                        <img src="img/zelda-grid-e.png" alt="zelda cheval">
+                        <img src="img/zelda-grid-f.png" alt="chaos">
+                <p>Link peut également porter toutes sortes de tenues, et en alternant ses vêtements il sera en mesure de se protéger des intempéries ou d'esquiver les coups ennemis. Il existe une foule de tenues différentes pour Link, des équipements pour se protéger de la neige aux armures, mais prenez garde à ne pas porter de métal lors d'une tempête ou vous pourriez vous faire électrocuter par la foudre !</p>
+
+                <div class="buttons">
+                    </div class="site">
+                        <a href="https://zelda.nintendo.com/">VOIR LE SITE OFFICIEL</a>
+                    </div>
+                    </div class="bande-annonce">
+                    <a href="https://www.youtube.com/watch?v=vumJiWdxQSs">VOIR LA BANDE D'ANNONCE</a>
+                    </div>
+                </div>
+            
+            </div>
+            </section>
+
     <!-- Construire une mini Grid CSS (largeur 100%) pour les images -->
     <!-- Bien respecter le graphisme des bouton (fond doré texte jaune, au survol on inverse) -->
     <!-- Le bouton 1 mène à la page Nintendo -->
-    <!-- Le bouton 2 ouvre un modal stylisé (même background que les sections dark, largeur 800px) avec la bande-annonce (lien : https://www.youtube.com/watch?v=vumJiWdxQSs)
-    -->
-   
-
-
+    <!-- Le bouton 2 ouvre un modal stylisé (même background que les sections dark, largeur 800px) avec la bande-annonce (lien : https://www.youtube.com/watch?v=vumJiWdxQSs)-->
+    
     <!-- SECTION #5 - FLEXBOX -->
-    <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
+    <section id="FLEXBOX" class="section-flexbox">
+    <div class="dark">
+
+        <h1> Vous cherchez d'autres jeux de la série The Legend of Zelda ? </h1>
+        <div class="hl-arrow"></div>  
+
+            <div class="section-flexbox-jeux">
+
+                <div class="Zelda-LA">
+                    <h2>The Legend of Zelda: Link's Awakening</h2>
+                        <img src="img/zelda-link-wakening.jpg" alt="Jacket Zelda Link Awakening">
+                    <p>Aidez Link à quitter une île étrange dans The Legend of Zelda: Link's Awakening sur Nintendo Switch.</p>
+                </div>
+
+                <div class="Zelda-TotK">
+                    <h2>The Legend of Zelda: Tears of the Kingdom </h2>
+                        <img src="img/zelda-tears.jpg" alt="Jacket Zelda Tears of the Kingdom">
+                    <p>Une aventure épique à travers les terres et les cieux d'Hyrule vous attend dans The Legend of Zelda: Tears of the Kingdom sur Nintendo Switch.</p>
+                </div>
+
+                <div class="Zelda-LA">
+                    <h2>Cadence of Hyrule – Crypt of the NecroDancer Featuring The Legend of Zelda</h2>
+                        <img src="img/zelda-cadence.jpg" alt="Jacket Cadence of Hyrule">
+                    <p>Combattez au rythme de mélodies classiques remixées dans Cadence of Hyrule – Crypt of the NecroDancer Featuring The Legend of Zelda sur Nintendo Switch.</p>
+                </div>
+        </div>
+
+             </div>
+            </section>
+
     <!-- Construisez vos colonnes avec Flexbox-->
     <!-- Pour l'icône de l'oeil : https://icons.getbootstrap.com/ -->
     
 
 
     <!-- FOOTER FLEX -->
+    <section id="FOOTER" class="section-footer"> 
+        <p>©  Sebastien Code GT 2022</p>
+        <img src="img/white-logo.png" alt="Logo blanc">
+    </section>
     <!-- La flèche renvoie en haut de page -->
     
 </body>
