@@ -63,11 +63,11 @@ Jaune : #ffc107
 
 /* STYLES DES SECTIONS  */
 .dark {
-    background-image: url(../img/"zelda-bg_pattern_brown.png");
+    background-image: url(../img/zelda-bg_pattern_brown.png);
 }
 
 .light {
-    /* Image de fond : zelda-bg_pattern_white.png */
+   background-image: url(../img/zelda-bg_pattern_white.png);
 }
 
 
