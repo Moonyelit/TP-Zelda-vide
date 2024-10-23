@@ -28,7 +28,7 @@ body p{
 
 h1{
   font-family: "Medula One", cursive;
-  font-size: 64px ;
+  font-size: 34px ;
 }
 
 h2{
@@ -36,22 +36,184 @@ h2{
   font-size: 48px ;
 }
 
+h3{
+  font-family: "Medula One", cursive;
+  font-size: 36px ;
+}
+
+buttons a{
+  font-family: "Medula One", cursive;
+}
 /*
 
-Polices : Medula One pour les titres et boutons, Libre Baskerville pour le reste
+
+/* STYLES DES SECTIONS et BASES  */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.section {
+  height: 100vh;
+  margin-bottom: -10px;
+}
+
+.dark {
+  background-image: url(../img/zelda-bg_pattern_brown.png);
+  height: 100vh;
+
+}
+
+.dark h2,p {
+  color:white;
+}
 
 
-h3 36px 
+.light {
+ background-image: url(../img/zelda-bg_pattern_white.png);
+ height: 100vh;
+}
 
-i 36px
+.light p {
+  color:rgb(0, 0, 0);
+}
 
-nav items 24px
+/* FLECHES */
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.hl-arrow { 
+  position: relative;
+  display: block;
+  background-color: #AF966D;
+  margin: 17px auto 12px;
+  max-width: 307px;
+  height: 2px;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: width 2s 0.1s cubic-bezier(0.49, 0.02, 0.29, 1.06), opacity 0.6s 0.1s ease;
+  transition: width 2s 0.1s cubic-bezier(0.49, 0.02, 0.29, 1.06), opacity 0.6s 0.1s ease;
+}
+.hl-arrow {
+  width: 100%;
+  opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+  .hl-arrow {
+      max-width: inherit;
+      width: 60%;
+      margin: 14px auto 13px;
+  }
+}
+
+.hl-arrow:before, .hl-arrow:after {
+  position: absolute;
+  content: "";
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4yLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iZGl2aWRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNXB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDI1IDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1IDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNCNjlBNjg7fQ0KPC9zdHlsZT4NCjxwb2x5Z29uIGlkPSJhcnJvdyIgY2xhc3M9InN0MCIgcG9pbnRzPSIyNC41LDUuMDI3IDIxLjgyMiw3Ljc0NCAxOS4zNDMsNS4yMyAxNy4wOTUsNy43NDQgMC41LDQuMjY3IDAuNSwzLjk3NyAxNy4wOTUsMC41IA0KCTE5LjM0MywzLjAxNCAyMS44MjIsMC41IDI0LjUsMy4yMTYgIi8+DQo8L3N2Zz4NCg==") center center no-repeat;
+  width: 24px;
+  height: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  }
+  .hl-arrow:before {
+  left: -24px;
+  }
+  .hl-arrow:after {
+  -webkit-transform: translateY(-50%) scaleX(-1);
+          transform: translateY(-50%) scaleX(-1);
+  right: -24px;
+  }
+
+
+/* SECTION HEADER */
+header {
+  width: 100%;
+  background-color: #af966d;
+  display: flex;
+  align-items: center;
+  height: 5em;
+}
+
+.logo {
+  display: flex;
+  height: 75%;
+  margin-left: 15px;
+}
+
+.section-NAVBAR {
+  margin-left: 50px;
+  height: auto;
+  font-family: "Medula One", cursive;
+  display: flex;
+}
+
+#evenement {
+  margin-right: 50px;
+  font-size: 36px;
+  padding-bottom: 5px;
+
+} 
+
+.section-NAVBAR a {
+  text-decoration: none;
+  color: #000000;
+  margin: 10px ;
+}
+
+.section-NAVBAR-link, .section-NAVBAR-link-2 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.section-NAVBAR-link-2 {
+font-weight: 600;
+}
+
+/* SECTION CAROUSEL */
+#CAROUSEL img{
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* SECTION #1 - BASIC */
+.section-basic h2,p{
+  text-align: center;
+  padding-top: 1.5em ;
+  margin: 0   0em;
+}
+
+.section-basic p{
+  padding: 0 18%;
+  margin-top: 1.5em;
+}
+
+
+.BotW{
+  color : #ffc107;
+  font-style: normal;;
+}
+
+.section-basic-open{
+  display: flex;
+  align-items: stretch;
+
+
+}
 
 Couleur dorée : #af966d
 
 Jaune : #ffc107
 
-*/
 
 
 /*  INTERDICTION DE CREER DES CLASS POUR LES MARGES, UTILISEZ LES CLASS BOOTSTRAP EXISTANTES :
@@ -61,14 +223,6 @@ Jaune : #ffc107
 
 
 
-/* STYLES DES SECTIONS  */
-.dark {
-    background-image: url(../img/zelda-bg_pattern_brown.png);
-}
-
-.light {
-   background-image: url(../img/zelda-bg_pattern_white.png);
-}
 
 
 
@@ -130,51 +284,8 @@ Jaune : #ffc107
 
 /******************/
 
-/* DIVIDER */
 
 
-*, :after, :before {
-  box-sizing: border-box;
-}
 
-.hl-arrow { 
-  position: relative;
-  display: block;
-  background-color: #AF966D;
-  margin: 17px auto 12px;
-  max-width: 307px;
-  height: 2px;
-  opacity: 0;
-  width: 0;
-  -webkit-transition: width 2s 0.1s cubic-bezier(0.49, 0.02, 0.29, 1.06), opacity 0.6s 0.1s ease;
-  transition: width 2s 0.1s cubic-bezier(0.49, 0.02, 0.29, 1.06), opacity 0.6s 0.1s ease;
-}
-.hl-arrow {
-  width: 100%;
-  opacity: 1;
-}
-@media only screen and (max-width: 767px) {
-  .hl-arrow {
-      max-width: inherit;
-      width: 60%;
-      margin: 14px auto 13px;
-  }
-}
-.hl-arrow:before, .hl-arrow:after {
-position: absolute;
-content: "";
-background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4yLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iZGl2aWRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNXB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDI1IDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1IDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNCNjlBNjg7fQ0KPC9zdHlsZT4NCjxwb2x5Z29uIGlkPSJhcnJvdyIgY2xhc3M9InN0MCIgcG9pbnRzPSIyNC41LDUuMDI3IDIxLjgyMiw3Ljc0NCAxOS4zNDMsNS4yMyAxNy4wOTUsNy43NDQgMC41LDQuMjY3IDAuNSwzLjk3NyAxNy4wOTUsMC41IA0KCTE5LjM0MywzLjAxNCAyMS44MjIsMC41IDI0LjUsMy4yMTYgIi8+DQo8L3N2Zz4NCg==") center center no-repeat;
-width: 24px;
-height: 8px;
-top: 50%;
--webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-}
-.hl-arrow:before {
-left: -24px;
-}
-.hl-arrow:after {
--webkit-transform: translateY(-50%) scaleX(-1);
-        transform: translateY(-50%) scaleX(-1);
-right: -24px;
-}
+
+
