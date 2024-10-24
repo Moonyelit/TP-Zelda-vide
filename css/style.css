@@ -79,7 +79,6 @@ p {
 }
 
 /* FLECHES */
-
 *,
 :after,
 :before {
@@ -186,15 +185,24 @@ header {
 }
 
 /* SECTION #1 - BASIC */
+#BASIC {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+
+
+.section-basic {
+  align-items: center;
+  padding: 0 21%;
+}
+
 .section-basic h2,
 p {
   text-align: center;
- 
-  margin: 0 0em;
 }
 
 .section-basic p {
-  padding: 0 18%;
   margin-top: 1.5em;
 }
 
@@ -203,26 +211,26 @@ p {
   font-style: normal;
 }
 
-.section-basic-cheval{
+.section-basic-textecheval{
   display: flex;
+  align-items: center;
 }
 
-#BASIC {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+.section-basic-textecheval-cheval{
+  margin-right: 8%  ;
 }
+
+.section-basic-textecheval-texte{
+  padding: 2% ;
+}
+
+
+
 
 /* Couleur dorée : #af966d
 
 Jaune : #ffc107 */
 
-/*  INTERDICTION DE CREER DES CLASS POUR LES MARGES, UTILISEZ LES CLASS BOOTSTRAP EXISTANTES :
-    https://getbootstrap.com/docs/5.0/utilities/spacing/
-*/
-
-/* MODAL */
-
-/* Ajouter le pattern zelda-bg_pattern_brown.png au background du modal */
 
 /* GRID CSS */
 
