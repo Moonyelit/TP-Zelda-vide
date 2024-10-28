@@ -19,30 +19,26 @@
   font-weight: bold;
 }
 
+/*FONTS*/
 body p {
   font-family: "Libre Baskerville", serif;
 }
 
-h1 {
+h1 h2 h3 button a {
   font-family: "Medula One", cursive;
+}
+
+h1 {
   font-size: 34px;
 }
 
 h2 {
-  font-family: "Medula One", cursive;
   font-size: 48px;
 }
 
 h3 {
-  font-family: "Medula One", cursive;
   font-size: 36px;
 }
-
-buttons a {
-  font-family: "Medula One", cursive;
-}
-/*
-
 
 /* STYLES DES SECTIONS et BASES  */
 body,
@@ -54,28 +50,33 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-color: #af966d;
+  --white: #f2f2f2;
+  --black: #1f1e1e;
+}
+
 .section {
-  height: 100vh;
-  margin-bottom: -10px;
+  height: 100%;
 }
 
 .dark {
   background-image: url(../img/zelda-bg_pattern_brown.png);
-  height: 100vh;
+  height: 100%;
 }
 
 .dark h2,
 p {
-  color: white;
+  color: var(--primary-color);
 }
 
 .light {
   background-image: url(../img/zelda-bg_pattern_white.png);
-  height: 100vh;
+  height: 100%;
 }
 
 .light p {
-  color: rgb(0, 0, 0);
+  color: var(--black);
 }
 
 /* FLECHES */
@@ -88,7 +89,7 @@ p {
 .hl-arrow {
   position: relative;
   display: block;
-  background-color: #af966d;
+  background-color: var(--primary-color);
   margin: 17px auto 12px;
   max-width: 307px;
   height: 2px;
@@ -135,10 +136,10 @@ p {
 /* SECTION HEADER */
 header {
   width: 100%;
-  background-color: #af966d;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  height: 5em;
+  height: 4.5em;
 }
 
 .logo {
@@ -190,8 +191,6 @@ header {
   padding-bottom: 1.5em;
 }
 
-
-
 .section-basic {
   align-items: center;
   padding: 0 21%;
@@ -211,26 +210,22 @@ p {
   font-style: normal;
 }
 
-.section-basic-textecheval{
+.section-basic-textecheval {
   display: flex;
   align-items: center;
 }
 
-.section-basic-textecheval-cheval{
-  margin-right: 8%  ;
+.section-basic-textecheval-cheval {
+  margin-right: 8%;
 }
 
-.section-basic-textecheval-texte{
-  padding: 2% ;
+.section-basic-textecheval-texte {
+  padding: 2%;
 }
-
-
-
 
 /* Couleur dorée : #af966d
 
 Jaune : #ffc107 */
-
 
 /* GRID CSS */
 
