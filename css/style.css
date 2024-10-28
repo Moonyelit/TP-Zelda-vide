@@ -28,7 +28,7 @@ h1,
 h2,
 h3,
 header,
-button a {
+.cta {
   font-family: "Medula One", cursive;
 }
 
@@ -44,7 +44,7 @@ h3 {
   font-size: 36px;
 }
 
-p{
+p {
   line-height: 1.5rem;
 }
 
@@ -60,7 +60,7 @@ html {
   --primary-color: #af966d;
   --white: #f2f2f2;
   --black: #1f1e1e;
-  --jaune:#ffc107;
+  --jaune: #ffc107;
 }
 
 .section {
@@ -71,6 +71,7 @@ html {
 .dark {
   background-image: url(../img/zelda-bg_pattern_brown.png);
   height: 100%;
+  width: 100%;
 }
 
 .dark h2,
@@ -81,6 +82,7 @@ p {
 .light {
   background-image: url(../img/zelda-bg_pattern_white.png);
   height: 100%;
+  width: 100%;
 }
 
 .light p {
@@ -224,7 +226,7 @@ p {
   padding: 3em 0;
 }
 
-.BotW {
+.section-basic-texte p span {
   color: var(--jaune);
   font-style: normal;
 }
@@ -241,57 +243,190 @@ p {
 }
 
 /*SECTION #2 - BOTSTRAP COL */
-#BOTSTRAP{
+#BOTSTRAP {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  p{
+  p {
     padding: 0 27%;
     margin-bottom: 2em;
   }
 }
-  .section-botstrap-wallpaper {
-    height: 38rem; 
-}
-
-.section-botstrap-images .section-botstrap-images-images {
+.section-botstrap-wallpaper {
   height: 38rem;
 }
 
-
-
-/* GRID CSS */
-
-.wrapper {
+.section-botstrap-images img {
+  height: 38rem;
 }
 
-.bloc-a {
+/*SECTION #3 - CAROUSEL */
+#CAROUSELSMALL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-carouselsmall-texte {
+  padding: 0 27%;
 }
 
-.bloc-b {
+.section-carouselsmall-images img {
+  width: 45%;
+  padding: 2em;
 }
 
-.bloc-d {
+.section-carouselsmall-texte2 {
+  padding: 0 27% 5em;
 }
 
-.bloc-c {
+/*SECTION #4 GRID CSS */
+#GRID {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  p {
+    padding: 0 27%;
+    margin-bottom: 2em;
+  }
 }
 
-.bloc-f {
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
 }
 
-.bloc-e {
+.section-grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 10px;
+  width: 40%;
+  padding-bottom: 2rem;
 }
 
-/* BOUTONS */
-
-.btn {
+.section-grid-images div {
+  width: 100%;
+  height: 100%;
 }
 
-/* FLEXBOX */
-
-.myFlex {
+.section-grid-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/******************/
+.div1 {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 3 / 4;
+}
+.div3 {
+  grid-area: 3 / 2 / 5 / 3;
+}
+.div4 {
+  grid-area: 3 / 3 / 5 / 4;
+}
+.div5 {
+  grid-area: 5 / 1 / 7 / 2;
+}
+.div6 {
+  grid-area: 5 / 2 / 7 / 4;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cta {
+  background: var(--primary-color);
+  border: 1px #957d56a9 sold;
+  padding: 1em;
+}
+
+.cta a {
+  color: var(--jaune);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
+/*SECTION #4 FLEXBOX */
+#FLEXBOX h2 {
+  padding-top: 1.5em;
+}
+
+#FLEXBOX h2 span {
+  color: var(--jaune);
+}
+
+#FLEXBOX {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-flexbox-jeux {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  margin: 2em 20%;
+  gap: 5px;
+  padding-bottom: 2rem;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #fcfafa;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  p {
+    color: var(--black);
+    padding: 0 2em;
+  }
+  h3{
+    margin: 1em;
+  }
+}
+  .flexbox-container svg {
+    fill:#1562fa;
+    width: 40px;
+    height: auto;
+    align-self: center;
+  }
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 30%;
+  background-color: var(--primary-color);
+}
+
+.logo-blanc img {
+  width: 15em;
+  height: auto;
+  margin: 2rem;
+}

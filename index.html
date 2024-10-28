@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+dfooter<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -66,8 +66,8 @@
             Oubliez tout ce que vous savez sur les jeux The Legend of Zelda.
             Plongez dans un monde de découverte, d'exploration et d'aventure
             dans
-            <em class="BotW">The Legend of Zelda: Breath of the Wild </em>, un
-            nouveau jeu qui vient bouleverser la série à succès.
+            <span>The Legend of Zelda: Breath of the Wild </span>, un nouveau
+            jeu qui vient bouleverser la série à succès.
           </p>
         </div>
 
@@ -141,8 +141,8 @@
           <h2>Combattez pour votre royaume</h2>
           <div class="hl-arrow"></div>
 
-          <p>
-            Grâce aux capacités d'adaptativxbon de Link, celui-ci est capable
+          <p class="section-carouselsmall-texte">
+            Grâce aux capacités d'adaptation de Link, celui-ci est capable
             d'acquérir différentes armes pour combattre. Néanmoins, ces armes
             s'usent avec le temps et il devra sans cesse en chercher de
             nouvelles.
@@ -152,7 +152,7 @@
             <!-- <img src="img/zelda-gardian.jpg" alt="princesse zelda"> -->
             <img src="img/zelda-run.jpg" alt="link qui court TOTK" />
           </div>
-          <p>
+          <p class="section-carouselsmall-texte2">
             Mais pour combattre, il n'y a pas que les armes. Link devra
             également apprendre à maîtriser toutes sortes d'attaques, comme le
             tir de flèches à longue portée ou la manipulation d'explosifs afin
@@ -173,15 +173,29 @@
             trouver de la nourriture. Vous pourrez même apprendre des recettes
             pour pimenter le tout ! De nouvelles recettes ne modifient pas
             uniquement le goût des aliments, elle permettent de soigner Link et
-            de lui conférer un boost de compétence./p>
+            de lui conférer un boost de compétence.
           </p>
-          <div class="section-grid-images">
-            <img src="img/zelda-grid-a.jpg" alt="link arc background" />
-            <img src="img/zelda-grid-b.jpg" alt="link zelda pleurent" />
-            <img src="img/zelda-grid-c.jpg" alt="link zelda rencontrent" />
-            <img src="img/zelda-grid-d.jpg" alt="zelda portrait" />
-            <img src="img/zelda-grid-e.png" alt="zelda cheval" />
-            <img src="img/zelda-grid-f.png" alt="chaos" />
+          <div class="grid-container">
+            <div class="section-grid-images">
+              <div class="div1">
+                <img src="img/zelda-grid-a.jpg" alt="link arc background" />
+              </div>
+              <div class="div2">
+                <img src="img/zelda-grid-b.png" alt="link zelda pleurent" />
+              </div>
+              <div class="div3">
+                <img src="img/zelda-grid-c.png" alt="link zelda rencontrent" />
+              </div>
+              <div class="div4">
+                <img src="img/zelda-grid-d.jpg" alt="zelda portrait" />
+              </div>
+              <div class="div5">
+                <img src="img/zelda-grid-e.png" alt="zelda cheval" />
+              </div>
+              <div class="div6">
+                <img src="img/zelda-grid-f.png" alt="chaos" />
+              </div>
+            </div>
           </div>
 
           <p>
@@ -194,10 +208,10 @@
           </p>
 
           <div class="buttons">
-            <div class="site">
+            <div class="cta">
               <a href="https://zelda.nintendo.com/">VOIR LE SITE OFFICIEL</a>
             </div>
-            <div class="bande-annonce">
+            <div class="cta">
               <a href="https://www.youtube.com/watch?v=vumJiWdxQSs"
                 >VOIR LA BANDE D'ANNONCE</a
               >
@@ -214,60 +228,77 @@
       <!-- SECTION #5 - FLEXBOX -->
       <section id="FLEXBOX" class="section-flexbox">
         <div class="dark">
-          <h2>Vous cherchez d'autres jeux de la série The Legend of Zelda ?</h2>
+          <h2>
+            Vous cherchez d'autres jeux de la série
+            <span>The Legend of Zelda ? </span>
+          </h2>
           <div class="hl-arrow"></div>
 
           <div class="section-flexbox-jeux">
-            <div class="Zelda-LA">
-              <h3>The Legend of Zelda: Link's Awakening</h3>
+            <div class="flexbox-container">
               <img
                 src="img/zelda-link-wakening.jpg"
                 alt="Jacket Zelda Link Awakening"
               />
+              <h3>The Legend of Zelda: Link's Awakening</h3>
               <p>
                 Aidez Link à quitter une île étrange dans The Legend of Zelda:
                 Link's Awakening sur Nintendo Switch.
               </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+              </svg>
             </div>
 
-            <div class="Zelda-TotK">
-              <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+            <div class="flexbox-container">
               <img
                 src="img/zelda-tears.jpg"
                 alt="Jacket Zelda Tears of the Kingdom"
               />
+              <h3>The Legend of Zelda: Tears of the Kingdom</h3>
               <p>
                 Une aventure épique à travers les terres et les cieux d'Hyrule
                 vous attend dans The Legend of Zelda: Tears of the Kingdom sur
                 Nintendo Switch.
               </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+              </svg>
             </div>
 
-            <div class="Zelda-LA">
+            <div class="flexbox-container">
+              <img src="img/zelda-cadence.jpg" alt="Jacket Cadence of Hyrule" />
               <h3>
                 Cadence of Hyrule – Crypt of the NecroDancer Featuring The
                 Legend of Zelda
               </h3>
-              <img src="img/zelda-cadence.jpg" alt="Jacket Cadence of Hyrule" />
               <p>
                 Combattez au rythme de mélodies classiques remixées dans Cadence
                 of Hyrule – Crypt of the NecroDancer Featuring The Legend of
                 Zelda sur Nintendo Switch.
               </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+              </svg>
             </div>
           </div>
         </div>
       </section>
-
-      *
+    </main>
+      
       <!-- Pour l'icône de l'oeil : https://icons.getbootstrap.com/ -->
 
       <!-- FOOTER FLEX -->
-      <section id="FOOTER" class="section-footer">
+      <footer>
         <p>© Sebastien Code GT 2022</p>
+        <div class="logo-blanc">
         <img src="img/white-logo.png" alt="Logo blanc" />
-      </section>
+        </div>
+      </footer>
       <!-- La flèche renvoie en haut de page -->
-    </main>
+    
   </body>
 </html>
